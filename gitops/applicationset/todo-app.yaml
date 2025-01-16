@@ -27,7 +27,7 @@ spec:
       source:
         repoURL: https://github.com/psuhalka/todo-app-gitops.git
         targetRevision: main
-        path: apps/overlays/{{environment}}
+        path: gitops/apps/overlays/{{environment}}
       destination:
         server: '{{url}}'
         namespace: '{{namespace}}'
