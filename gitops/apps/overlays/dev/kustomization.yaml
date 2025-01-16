@@ -3,19 +3,10 @@ kind: Kustomization
 
 namespace: todo-dev
 
-bases:
-- ../../base/frontend
-- ../../base/backend
-
-commonLabels:
-  env: dev
-
-images:
-- name: psuhalka/todo-app-frontend
-  newTag: latest
-- name: psuhalka/todo-app-backend
-  newTag: latest
-
 resources:
+- ../../base
 - namespace.yaml
+- secret.yaml
+
+patchesStrategicMerge:
 - secret.yaml
