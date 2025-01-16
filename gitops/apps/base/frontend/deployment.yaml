@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: psuhalka/todo-app-frontend:latest
+        image: psuhalka/todo-app-frontend:tagname
         ports:
         - containerPort: 80
         env:

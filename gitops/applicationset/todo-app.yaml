@@ -25,7 +25,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/psuhalka/todo-app-gitops.git
+        repoURL: https://github.com/praveensuhalka-wiser/todo-app-gitops.git
         targetRevision: main
         path: gitops/apps/overlays/{{environment}}
       destination:
